@@ -1,5 +1,6 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <div class="main-container">
     <mat-toolbar class="navbar">
         <span><img src="../../../assets/formsapp-logo.svg" alt="" srcset=""></span>
@@ -24,17 +25,18 @@
                 </div>
               </div>
               <div class="C" style="flex-shrink: 0;">
-                <div class="row d-flex align-items-center">
+                <div class="row d-flex align-items-center"> 
                   <button class="b text-white">
                     Gratuit            
                   </button>
-                  <div class="ms-auto dropdown dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <div class="btn dropup dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Formulaire de quota</a></li>
                       <li><a class="dropdown-item" href="#">Quota de réponses mensuelles</a></li>
                       <li><a class="dropdown-item" href="#">Quota de vues de formulaire</a></li>
                     </ul>
                   </div>
+                  
                 </div>
                 <nav class="item text-dark">
                   <a class="D text-dark" routerLink="/archive" routerLinkActive="active">
@@ -64,23 +66,187 @@
         <mat-sidenav-content class="content">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center mb-4">
-                    <h5>Mes formulaires <button class="btn btn-custom">CRÉER UN FORMULAIRE</button></h5>
+                  <h5>
+                    Mes formulaires
+                    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+                </h5>
                     <div class="icon-buttons">
-                      <div class="dropdown">
-                        <button class="btn bg-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="btn-group dropstart">
+                        <button class="btn bg-white " type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           <i class="fas fa-search"></i>
                         </button>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li class="search">
+                            <input type="text" placeholder="formulaire de recherche">
+                          </li>
                         </ul>
-                      </div>                        <button class="btn"><i class="fas fa-filter"></i></button>
-                        <button class="btn"><i class="fas fa-sort"></i></button>
-                        <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0m0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0m0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"/></svg></button>
-                        <button class="btn"><i class="fas fa-list"></i> Liste</button>
-                        <button class="btn"><i class="fas fa-th"></i> Grille</button>
+                      </div> 
+                      <div class="btn-group dropdown">
+                        <button class="btn bg-white " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+                            <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+                          </svg>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <div class="dropdown-item">
+                            <input type="checkbox" id="favoris">
+                            <label for="favoris">
+                              <i class="fas fa-star text-warning "></i> Favoris
+                            </label>
+                          </div>
+                          <div class="dropdown-item">
+                            <input type="checkbox" id="sans-etoile">
+                            <label for="sans-etoile">
+                              <i class="far fa-star"></i> Sans étoile
+                            </label>
+                          </div>
+                          <div class="dropdown-item">
+                            <input type="checkbox" id="reponses-non-lues">
+                            <label for="reponses-non-lues">
+                              <i class="fas fa-circle text-danger"></i> Réponses non lues
+                            </label>
+                          </div>
+                          <div class="dropdown-item">
+                            <input type="checkbox" id="sans-reponses-non-lues">
+                            <label for="sans-reponses-non-lues">
+                              <i class="fas fa-circle text-secondary"></i> Sans réponses non lues
+                            </label>
+                          </div>
+                          <div class="dropdown-item">
+                            <input type="checkbox" id="desactive">
+                            <label for="desactive">
+                              <i class="fas fa-pause"></i> Désactivé
+                            </label>
+                          </div>
+                          <div class="dropdown-item">
+                            <input type="checkbox" id="active">
+                            <label for="active">
+                              <i class="fas fa-play"></i> Activée
+                            </label>
+                          </div>
+                          <div class="dropdown-item">
+                            <input type="checkbox" id="publique">
+                            <label for="publique">
+                              <i class="fas fa-globe text-success"></i> Publique
+                            </label>
+                          </div>
+                          <div class="dropdown-item">
+                            <input type="checkbox" id="non-repertorie">
+                            <label for="non-repertorie">
+                              <i class="fas fa-lock-open text-warning"></i> Non répertorié
+                            </label>
+                          </div>
+                          <div class="dropdown-item">
+                            <input type="checkbox" id="limite">
+                            <label for="limite">
+                              <i class="fas fa-users text-info"></i> Limité
+                            </label>
+                          </div>
+                          <div class="dropdown-item">
+                            <input type="checkbox" id="limite">
+                            <label for="limite">
+                              <i class="fas fa-lock"></i> Privé
+                            </label>
+                          </div>
+                        </ul>
+                      </div> 
+                      <div class="btn-group dropdown">
+                          <button class="btn bg-white " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-up-alt" viewBox="0 0 16 16">
+                              <path d="M3.5 13.5a.5.5 0 0 1-1 0V4.707L1.354 5.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.5.5 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 4.707zm4-9.5a.5.5 0 0 1 0-1h1a.5.5 0 0 1 0 1zm0 3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 0 1zm0 3a.5.5 0 0 1 0-1h5a.5.5 0 0 1 0 1zM7 12.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5"/>
+                            </svg>
+                          </button>  
+                          <ul class="dropdown-menu">
+                              <li>
+                                  <label class="dropdown-item">
+                                      <input type="radio" name="tri" value="date_creation">
+                                      Date de création
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="dropdown-item">
+                                      <input type="radio" name="tri" value="alphabetique">
+                                      Alphabétique
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="dropdown-item">
+                                      <input type="radio" name="tri" value="derniere_modification">
+                                      Dernière modification
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="dropdown-item">
+                                      <input type="radio" name="tri" value="nombre_soumissions">
+                                      Nombre de soumissions
+                                  </label>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="btn-group dropdown">
+                        <button class="btn bg-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">                   
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0m0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0m0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"/></svg>
+                        </button>
+                        <ul class="nn dropdown-menu">
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                              <button type="button" class="aa  rounded-pill btn border border-dark">
+                                <input type="checkbox" id="selection">
+                                <label for="selection"><i class=" text-info "></i> Tout Selectioné
+                                </label>
+                              </button>
+                              <button type="button" class="bb rounded-pill btn border border-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/></svg>Deplacer vers
+                              </button>
+                              <button type="button" class="cc rounded-pill btn border border-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pause-fill" viewBox="0 0 16 16">
+                                <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"/></svg>Deactiver
+                              </button>
+                              <button type="button" class="dd rounded-pill btn border border-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/></svg>Activer
+                              </button>
+                              <button type="button" class="ee rounded-pill btn border border-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-open" viewBox="0 0 16 16">
+                                <path d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l5.75 3.45L8 8.917l1.25.75L15 6.217V5.4a1 1 0 0 0-.53-.882zM15 7.383l-4.778 2.867L15 13.117zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734ZM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765z"/></svg>Tout marquer comme lue
+                              </button>
+                              <button type="button" class="ff rounded-pill btn border border-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive" viewBox="0 0 16 16">
+                                  <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5zm13-3H1v2h14zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                                </svg>Deplacer dans l"archive
+                              </button>
+                              <button type="button" class="gg rounded-pill btn border border-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"><path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/></svg>Suprimer
+                            </button>
+                            </div>
+                        </ul>
+                      </div> 
+                      <button class="btn"><i class="fas fa-list"></i> Liste</button>
+                      <button class="btn"><i class="fas fa-th"></i> Grille</button>
                     </div>
                 </div>
                 <div class="empty-state">

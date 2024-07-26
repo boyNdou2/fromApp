@@ -9,7 +9,7 @@ import { ArchiveComponent } from './components/sidebar/archive/archive.component
 import { CorbeilleComponent } from './components/sidebar/corbeille/corbeille.component';
 import { SommissionsComponent } from './components/sidebar/sommissions/sommissions.component';
 import { HomeComponent } from './components/sidebar/home/home.component';  // Assurez-vous d'importer le HomeComponent
-
+import { app } from '../../server';
 const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'register', component: RegisterComponent },

@@ -19,7 +19,8 @@ import { ArchiveComponent } from './components/sidebar/archive/archive.component
 import { CorbeilleComponent } from './components/sidebar/corbeille/corbeille.component';
 import { SommissionsComponent } from './components/sidebar/sommissions/sommissions.component';
 import { HomeComponent } from './components/sidebar/home/home.component';
-
+import { CreateFormDialogComponent } from './components/sidebar/create-form-dialog/create-form-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import { HomeComponent } from './components/sidebar/home/home.component';
     ArchiveComponent,
     CorbeilleComponent,
     SommissionsComponent,
-    HomeComponent
+    HomeComponent,
+    CreateFormDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,9 @@ import { HomeComponent } from './components/sidebar/home/home.component';
     MatInputModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule
+
   ],
   providers: [
     provideAnimationsAsync()
