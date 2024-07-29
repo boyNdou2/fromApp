@@ -19,4 +19,5 @@ export class NavbarComponent {
       console.log('The dialog was closed');
     });
   }
+  
 }

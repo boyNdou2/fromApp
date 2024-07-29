@@ -98,7 +98,6 @@
 }
 
 .b {
-    background-color: black;
     border-radius: 10px;
     margin-bottom: 10px;
     font-size: 18px;
@@ -231,3 +230,55 @@
      cursor: pointer;
      
  }
+ .bn{
+    margin-left: 100px;
+    
+ }
+ .custom-dropdown-menu {
+  width: 280%; 
+  left: 30%;
+  transform: translateX(-50%);
+}
+
+.dropdown-menu .modal-body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dropdown-menu .card {
+  flex: 1 1 200px; 
+  max-width: 400px; 
+}
+.jj{
+    font-weight: 300;
+}
+.CD{
+    text-align: end;
+}
+.color-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+.color-option:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.add-button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+}
+.quota-item {
+    margin-bottom:5px;
+  }
+  
