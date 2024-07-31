@@ -1,9 +1,22 @@
-<p>create-form-dialog works!</p>
 <h1 mat-dialog-title>Créer un formulaire</h1>
-<div mat-dialog-content>
-  <!-- Votre contenu ici -->
+<div mat-dialog-content class="mat-typography">
+  <div class="mb-3">
+    <label for="folderName" class="form-label"><strong>Nom de dossier</strong></label>
+    <input type="text" id="folderName" class="form-control" placeholder="Nom de dossier">
 </div>
-<div mat-dialog-actions>
-  <button mat-button (click)="onNoClick()">Annuler</button>
-  <button mat-button (click)="onSubmit()">Créer</button>
+  <span>Couleur du dossier</span>
+  
+  <div class="color-options d-flex flex-wrap mb-3">
+    <div class="color-option me-2" style="background-color: #e57373;"></div>
+    <div class="color-option me-2" style="background-color: #81c784;"></div>
+    <div class="color-option me-2" style="background-color: #ffb74d;"></div>
+    <div class="color-option me-2" style="background-color: #4dd0e1;"></div>
+    <div class="color-option me-2" style="background-color: #f06292;"></div>
+    <div class="color-option me-2" style="background-color: #ba68c8;"></div>
+    <div class="color-option me-2" style="background-color: #e0e0e0;">+</div>
 </div>
+</div>
+<mat-dialog-actions align="end"> 
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>creer</button>
+</mat-dialog-actions>

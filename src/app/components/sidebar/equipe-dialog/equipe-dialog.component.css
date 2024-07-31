@@ -1,0 +1,88 @@
+
+   .img{
+    width: 100px;
+    height:100px ;
+   }
+
+        .container {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 500px;
+        }
+
+        .icon {
+            font-size: 50px;
+            color: #00aaff;
+            margin-bottom: 20px;
+        }
+
+        .promo {
+            background-color: #00aaff;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .pricing-plans {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .plan {
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            width: 150px;
+        }
+
+        .plan-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .plan-member {
+            display: block;
+            padding: 10px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            color: #333;
+        }
+
+        .button {
+            background-color: #00aaff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .contact {
+            margin-top: 20px;
+            color: #00aaff;
+        }
+
+        .contact a {
+            color: #00aaff;
+            text-decoration: none;
+        }

@@ -21,6 +21,7 @@ import { SommissionsComponent } from './components/sidebar/sommissions/sommissio
 import { HomeComponent } from './components/sidebar/home/home.component';
 import { CreateFormDialogComponent } from './components/sidebar/create-form-dialog/create-form-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { EquipeDialogComponent } from './components/sidebar/equipe-dialog/equipe-dialog.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +35,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     SommissionsComponent,
     HomeComponent,
     CreateFormDialogComponent,
+    EquipeDialogComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -53,4 +56,6 @@ import { MatDialogModule } from '@angular/material/dialog';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  
+ }

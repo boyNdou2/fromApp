@@ -1,0 +1,22 @@
+.color-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+.color-option:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.add-button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+}
