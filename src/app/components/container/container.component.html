@@ -1,0 +1,239 @@
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h5>Mes formulaires
+        <button class="btn btn-custom" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+          CRÉER UN FORMULAIRE
+        </button>
+        <div class="dropdown">
+          <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li class="d-flex align-items-center hh">
+              <h6 class="dropdown-header mb-0">
+                Créez votre formulaire
+              </h6>
+              <svg style="width: 10px; margin-left: 800px;" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 320 512">
+                <path d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"></path>
+              </svg>
+            </li>
+            <li>
+              <div class="modal-body d-flex justify-content-center">
+                <div class="option m-3 card">
+                  <i class="i-icon" [ngStyle]="{ 'color': '#7f56f2' }">
+                    <svg class="w-25 h-35" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="fill: currentColor;">
+                    <path d="M432 32C440.8 32 448 39.16 448 48V96H496C504.8 96 512 103.2 512 112C512 120.8 504.8 128 496 128H448V176C448 184.8 440.8 192 432 192C423.2 192 416 184.8 416 176V128H368C359.2 128 352 120.8 352 112C352 103.2 359.2 96 368 96H416V48C416 39.16 423.2 32 432 32zM432 320C440.8 320 448 327.2 448 336V384H496C504.8 384 512 391.2 512 400C512 408.8 504.8 416 496 416H448V464C448 472.8 440.8 480 432 480C423.2 480 416 472.8 416 464V416H368C359.2 416 352 408.8 352 400C352 391.2 359.2 384 368 384H416V336C416 327.2 423.2 320 432 320zM123.3 321.8L9.292 269.1C3.627 266.5 0 260.8 0 254.6C0 248.3 3.627 242.6 9.292 240L123.3 187.3L176 73.29C178.6 67.63 184.3 64 190.6 64C196.8 64 202.5 67.63 205.1 73.29L257.8 187.3L371.8 240C377.5 242.6 381.1 248.3 381.1 254.6C381.1 260.8 377.5 266.5 371.8 269.1L257.8 321.8L205.1 435.8C202.5 441.5 196.8 445.1 190.6 445.1C184.3 445.1 178.6 441.5 176 435.8L123.3 321.8zM54.16 254.6L136.8 292.7C143.7 295.9 149.2 301.4 152.4 308.3L190.6 390.9L228.7 308.3C231.9 301.4 237.4 295.9 244.3 292.7L326.9 254.6L244.3 216.4C237.4 213.2 231.9 207.7 228.7 200.8L190.6 118.2L152.4 200.8C149.2 207.7 143.7 213.2 136.8 216.4L54.16 254.6z"></path></svg></i>
+                    <strong>Générer avec l'IA</strong>
+                    <p>Utilisez forms.app AI pour avoir un formulaire personnalisable instantanément.</p>
+                  
+                </div>
+                <div class="option m-3 card">
+                  <div>
+                    <i  class="i-icon" [ngStyle]="{ 'color': '#11c4e0' }">
+                      <svg  aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-plus-circle fa-w-16 fa-2x w-25 h-25">
+                      <path fill="currentColor" d="M384 250v12c0 6.6-5.4 12-12 12h-98v98c0 6.6-5.4 12-12 12h-12c-6.6 0-12-5.4-12-12v-98h-98c-6.6 0-12-5.4-12-12v-12c0-6.6 5.4-12 12-12h98v-98c0-6.6 5.4-12 12-12h12c6.6 0 12 5.4 12 12v98h98c6.6 0 12 5.4 12 12zm120 6c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-32 0c0-119.9-97.3-216-216-216-119.9 0-216 97.3-216 216 0 119.9 97.3 216 216 216 119.9 0 216-97.3 216-216z" class=""></path></svg></i>
+                    <br>
+                      <strong>Commencer à partir de zéro</strong>
+                    <p >Obtenez une toile vierge pour laisser votre créativité s'exprimer.</p>
+                  </div>
+                </div>
+                <div class="option m-3 card">
+                  <div >
+                    <i class="i-icon" [ngStyle]="{ 'color': '#11c4e0' }">
+                      <svg class="w-25 h-25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="fill: currentColor;">
+                        <path d="M176 64H80c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16h96c8.8 0 16-7.2 16-16V80c0-8.8-7.2-16-16-16zM80 32h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48zm96 288H80c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16h96c8.8 0 16-7.2 16-16V336c0-8.8-7.2-16-16-16zM80 288h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V336c0-26.5 21.5-48 48-48zM336 64c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16h96c8.8 0 16-7.2 16-16V80c0-8.8-7.2-16-16-16H336zM288 80c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H336c-26.5 0-48-21.5-48-48V80zm96 192c8.8 0 16 7.2 16 16v80h80c8.8 0 16 7.2 16 16s-7.2 16-16 16H400v80c0 8.8-7.2 16-16 16s-16-7.2-16-16V400H288c-8.8 0-16-7.2-16-16s7.2-16 16-16h80V288c0-8.8 7.2-16 16-16z"></path>
+                      </svg>
+                    </i><br>
+                    <strong>Sélectionner un modèle</strong>
+                    <p >Choisissez parmi des modèles artisanaux pour commencer immédiatement.</p>
+                  </div>
+                </div>
+                <div class="option m-3 card">
+                  <div >
+                    <i class="i-icon" style="color: rgb(17, 196, 224);">
+                      <svg class="w-25 h-25" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512" style="fill: currentColor;">
+                        <path d="M497.9 97.98L414.02 14.1c-9-9-21.2-14.1-33.89-14.1H175.99C149.5.1 128 21.6 128 48.09V288H8c-4.42 0-8 3.58-8 8v16c0 4.42 3.58 8 8 8h248v52.67c0 10.98 6.38 20.55 16.69 24.97 14.93 6.45 26.88-1.61 30.88-5.39l71.72-68.12c5.62-5.33 8.72-12.48 8.72-20.12s-3.09-14.8-8.69-20.11l-71.78-68.16c-8.28-7.8-20.41-9.88-30.84-5.38-10.31 4.42-16.69 13.98-16.69 24.97V288H160V48.09c0-8.8 7.2-16.09 16-16.09h176.04v104.07c0 13.3 10.7 23.93 24 23.93h103.98v304.01c0 8.8-7.2 16-16 16H175.99c-8.8 0-16-7.2-16-16V352H128v112.01c0 26.49 21.5 47.99 47.99 47.99h288.02c26.49 0 47.99-21.5 47.99-47.99V131.97c0-12.69-5.1-24.99-14.1-33.99zM288 245.12L350 304l-62 58.88V245.12zm96.03-117.05V32.59c2.8.7 5.3 2.1 7.4 4.2l83.88 83.88c2.1 2.1 3.5 4.6 4.2 7.4h-95.48z"></path>
+                      </svg>
+                    </i><br>
+            
+                    <strong>Importer un formulaire</strong>
+                    <p >Gagnez du temps en important vos formulaires existants (PDFs, URLs, & plus).</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </h5>                                               
+      <div class="icon-buttons">
+          <div class="btn-group dropstart">
+            <button class="btn bg-white " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-search"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li class="search">
+                <input type="text" placeholder="formulaire de recherche">
+              </li>
+            </ul>
+          </div> 
+          <div class="btn-group dropdown">
+            <button class="btn bg-white " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+                <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+              </svg>
+            </button>
+            <ul class="dropdown-menu">
+              <div class="dropdown-item">
+                <input type="checkbox" id="favoris">
+                <label for="favoris">
+                  <i class="fas fa-star text-warning "></i> Favoris
+                </label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="sans-etoile">
+                <label for="sans-etoile">
+                  <i class="far fa-star"></i> Sans étoile
+                </label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="reponses-non-lues">
+                <label for="reponses-non-lues">
+                  <i class="fas fa-circle text-danger"></i> Réponses non lues
+                </label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="sans-reponses-non-lues">
+                <label for="sans-reponses-non-lues">
+                  <i class="fas fa-circle text-secondary"></i> Sans réponses non lues
+                </label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="desactive">
+                <label for="desactive">
+                  <i class="fas fa-pause"></i> Désactivé
+                </label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="active">
+                <label for="active">
+                  <i class="fas fa-play"></i> Activée
+                </label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="publique">
+                <label for="publique">
+                  <i class="fas fa-globe text-success"></i> Publique
+                </label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="non-repertorie">
+                <label for="non-repertorie">
+                  <i class="fas fa-lock-open text-warning"></i> Non répertorié
+                </label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="limite">
+                <label for="limite">
+                  <i class="fas fa-users text-info"></i> Limité
+                </label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="limite">
+                <label for="limite">
+                  <i class="fas fa-lock"></i> Privé
+                </label>
+              </div>
+            </ul>
+          </div> 
+          <div class="btn-group dropdown">
+              <button class="btn bg-white " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-up-alt" viewBox="0 0 16 16">
+                  <path d="M3.5 13.5a.5.5 0 0 1-1 0V4.707L1.354 5.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.5.5 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 4.707zm4-9.5a.5.5 0 0 1 0-1h1a.5.5 0 0 1 0 1zm0 3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 0 1zm0 3a.5.5 0 0 1 0-1h5a.5.5 0 0 1 0 1zM7 12.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5"/>
+                </svg>
+              </button>  
+              <ul class="dropdown-menu">
+                  <li>
+                      <label class="dropdown-item">
+                          <input type="radio" name="tri" value="date_creation">
+                          Date de création
+                      </label>
+                  </li>
+                  <li>
+                      <label class="dropdown-item">
+                          <input type="radio" name="tri" value="alphabetique">
+                          Alphabétique
+                      </label>
+                  </li>
+                  <li>
+                      <label class="dropdown-item">
+                          <input type="radio" name="tri" value="derniere_modification">
+                          Dernière modification
+                      </label>
+                  </li>
+                  <li>
+                      <label class="dropdown-item">
+                          <input type="radio" name="tri" value="nombre_soumissions">
+                          Nombre de soumissions
+                      </label>
+                  </li>
+              </ul>
+          </div>
+          <div class="btn-group dropdown">
+            <button class="btn bg-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">                   
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0m0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0m0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"/></svg>
+            </button>
+            <ul class="nn dropdown-menu">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="aa btn rounded-pill border border-dark btn-wide">
+                  <input type="checkbox" id="selection">
+                  <label for="selection"><i class=" text-info "></i> Tout Selectioné</label>
+                </button>
+                <button type="button" class="aa btn rounded-pill border border-dark btn-wide">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                  </svg>
+                  Deplacer vers
+                </button>
+                <button type="button" class="aa btn rounded-pill border border-dark btn-wide">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pause-fill" viewBox="0 0 16 16">
+                    <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"/>
+                  </svg>
+                  Deactiver
+                </button>
+                <button type="button" class="aa btn rounded-pill border border-dark btn-wide">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                    <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
+                  </svg>
+                  Activer
+                </button>
+                <button type="button" class="aa btn rounded-pill border border-dark btn-wide">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-open" viewBox="0 0 16 16">
+                    <path d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l5.75 3.45L8 8.917l1.25.75L15 6.217V5.4a1 1 0 0 0-.53-.882zM15 7.383l-4.778 2.867L15 13.117zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734ZM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765z"/>
+                  </svg>
+                  Tout marquer comme lue
+                </button>
+                <button type="button" class="aa btn rounded-pill border border-dark btn-wide">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive" viewBox="0 0 16 16">
+                    <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5zm13-3H1v2h14zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+                  Deplacer dans l'archive
+                </button>
+                <button type="button" class="aa btn rounded-pill border border-dark btn-wide">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                    <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                  </svg>
+                  Supprimer
+                </button>
+              </div>
+            </ul>
+            
+          </div> 
+          <button class="btn"><i class="fas fa-list"></i> Liste</button>
+          <button class="btn"><i class="fas fa-th"></i> Grille</button>
+      </div>
+    </div>
+    <div class="empty-state">
+      <img src="../../../assets/formulair.svg" alt="Form Icon">
+      <h6>VOUS N'AVEZ PAS ENCORE CRÉÉ DE FORMULAIRES.</h6>
+      <p>Vos formulaires apparaîtront ici.</p>
+    </div>
+  </div>

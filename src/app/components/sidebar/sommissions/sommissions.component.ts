@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-sommissions',
@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class SommissionsComponent {
 
+    @Output() viewChange = new EventEmitter<string>();
+  
+    emitViewChange() {
+      this.viewChange.emit('sommissions');
+    }
+  
 }

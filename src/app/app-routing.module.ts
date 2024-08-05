@@ -10,6 +10,7 @@ import { CorbeilleComponent } from './components/sidebar/corbeille/corbeille.com
 import { SommissionsComponent } from './components/sidebar/sommissions/sommissions.component';
 import { HomeComponent } from './components/sidebar/home/home.component';  // Assurez-vous d'importer le HomeComponent
 import { EquipeDialogComponent } from './components/sidebar/equipe-dialog/equipe-dialog.component';
+import { ContainerComponent } from './components/container/container.component';
 const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
@@ -23,6 +24,8 @@ const routes: Routes = [
   { path: 'solution', component: SolutionComponent },
   { path: 'password-recovery', component: PasswordRecoveryComponent },
   { path: '**', redirectTo: '' },
+  { path: 'container', component: ContainerComponent },
+
 ];
 
 @NgModule({

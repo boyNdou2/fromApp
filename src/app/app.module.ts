@@ -22,6 +22,7 @@ import { HomeComponent } from './components/sidebar/home/home.component';
 import { CreateFormDialogComponent } from './components/sidebar/create-form-dialog/create-form-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { EquipeDialogComponent } from './components/sidebar/equipe-dialog/equipe-dialog.component';
+import { ContainerComponent } from './components/container/container.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { EquipeDialogComponent } from './components/sidebar/equipe-dialog/equipe
     HomeComponent,
     CreateFormDialogComponent,
     EquipeDialogComponent,
+    ContainerComponent,
    
   ],
   imports: [

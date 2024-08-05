@@ -105,6 +105,9 @@ button[color="primary"] {
 }
 .separator::before,
 .separator::after {
+  margin-right: 150px;
+  margin-left: 150px;
+
   content: '';
   flex: 1;
   border-bottom: 1px solid #ccc;
